@@ -53,14 +53,14 @@ def get_readable_time(seconds: int) -> str:
 
 PM_START_TEXT = """
 Hi {}, my name is {}! 
-I am an Anime themed group management bot.
-Build by weebs for weebs, I specialize in managing anime and similar themed groups.
-You can find my list of available commands with /help.
+I am an pemberantas jamet yang bisa jagain grup lu dari jamet.
+di buat oleh @gksukasibett,bot ini di buat untuk mengilangkan jamet di telegram.
+add gua ke grup lu kita sama sama berantas jamet mau tau gua bisa apa aja? tulis /help.
 """
 
 HELP_STRINGS = """
 Hey there! My name is *{}*.
-I'm HIKIGAYA & I help admins to manage their groups! Have a look at the following for an idea of some of \
+I'm PEMBERANTAS JAMET & I help admins to manage their groups! Have a look at the following for an idea of some of \
 the things I can help you with.
 
 *Main* commands available:
@@ -78,7 +78,7 @@ And the following:
     dispatcher.bot.first_name, ""
     if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\n")
 
-SAITAMA_IMG = "https://telegra.ph/file/ab20e874217adfabe42df.jpg"
+SAITAMA_IMG = "https://telegra.ph/file/3e08042d94e6665aae279.jpg"
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
 Senku is hosted on one of Heroku's Servers and doesn't require any donations as of now but \
@@ -207,8 +207,8 @@ def start(update: Update, context: CallbackContext):
                     ],
                      [
                         InlineKeyboardButton(
-                            text=" 🌐 Help ",
-                            url="https://t.me/hikigaya_robot?start=help"),
+                            text=" ⚜OWNER⚜",
+                            url="https://t.me/gksukaribett"),
                          
                      ]]))
     else:
