@@ -79,7 +79,7 @@ And the following:
 
 SAITAMA_IMG = "https://telegra.ph/file/a326bfaa72ccf189fc33a.jpg"
 
-DONATE_STRING = """GK ADA COY"""
+DONATE_STRING = """gausah deh 😁"""
 
 IMPORTED = {}
 MIGRATEABLE = []
@@ -198,7 +198,7 @@ def start(update: Update, context: CallbackContext):
                     [[
                         InlineKeyboardButton(
                             text="Lagu Kamu",
-                            url="t.me/lagukamubot),
+                            url="t.me/lagukamubot"),
                     ],
                      [
                         InlineKeyboardButton(
