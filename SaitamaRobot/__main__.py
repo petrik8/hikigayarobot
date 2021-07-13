@@ -52,15 +52,14 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-Hi {}, my name is {}! 
-I am an pemberantas jamet yang bisa jagain grup lu dari jamet.
-di buat oleh @gksukasibett,bot ini di buat untuk mengilangkan jamet di telegram.
-add gua ke grup lu kita sama sama berantas jamet mau tau gua bisa apa aja? tulis /help.
+Hallo {},
+Saya adalah {}, bot yang dirancang untuk mengatur sebuah grup di telegram. Saya dapat membantu mengatur grup anda sesuai kemampuan saya. Silahkan tekan /help untuk mengetahui apa saja yang menjadi kemampuan saya dan masukkan saya ke grup untuk memulainya.
+Bot ini dikelola oleh @fhroziiiii, jika ingin download musik dan video dari Youtube melalui telegram silahkan tekan tombol dibawah ini.
 """
 
 HELP_STRINGS = """
 Hey there! My name is *{}*.
-I'm PEMBERANTAS JAMET & I help admins to manage their groups! Have a look at the following for an idea of some of \
+I'm Achilles GroupManagement & I help admins to manage their groups! Have a look at the following for an idea of some of \
 the things I can help you with.
 
 *Main* commands available:
@@ -78,7 +77,7 @@ And the following:
     dispatcher.bot.first_name, ""
     if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\n")
 
-SAITAMA_IMG = "https://telegra.ph/file/3e08042d94e6665aae279.jpg"
+SAITAMA_IMG = "https://telegra.ph/file/a326bfaa72ccf189fc33a.jpg"
 
 DONATE_STRING = """GK ADA COY"""
 
@@ -198,14 +197,14 @@ def start(update: Update, context: CallbackContext):
                 reply_markup=InlineKeyboardMarkup(
                     [[
                         InlineKeyboardButton(
-                            text="Add me to your group",
-                            url="t.me/{}?startgroup=true".format(
-                                context.bot.username)),
+                            text="Lagu Kamu",
+                            url="t.me/lagukamubot),
                     ],
                      [
                         InlineKeyboardButton(
-                            text=" ⚜OWNER⚜",
-                            url="https://t.me/gksukaribett"),
+                            text="Tambahkan ke grup",
+                            url="t.me/{}?startgroup=true".format(
+                                context.bot.username)),
                          
                      ]]))
     else:
